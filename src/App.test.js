@@ -89,7 +89,7 @@ test("shows multiple recipes after adding", async () => {
   render(<App />);
 
   await addNewRecipe('Tofu Scramble Tacos', "1. heat a skillet on medium with a dollop of coconut oil {enter} 2. warm flour tortillas");
-  await addNewRecipe('Meatball Lasagna', "1. Add meatballs. {enter} 2. Add cheese. {enter} 3. Add tomato sauce. {enter} 4. Stir. {enter} 5. You're good to go");
+  await addNewRecipe('Meatball Lasagna', "1. Add meatballs. {enter} 2. Add cheese. {enter} 3. Add tomato sauce. {enter} 4. Stir. {enter} 5. You're good to go.");
   await addNewRecipe('Soup', "1. Add water. {enter} 2. Grind a tomato. {enter} 3. Mix in pan and stir. {enter} 4. You're good to go.");
 
   expect(await screen.findByText('Tofu Scramble Tacos')).toBeInTheDocument();
